@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background: url("../bg.jpg") no-repeat center fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+    opacity: 0.9;
+}
+.nav-bar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    background-color: none;
+    height: 53px;
+}
+.nav-ul{
+    font-size: 15px;
+    display: flex;
+    list-style: none;
+    width: 50%;
+}
+.nav-ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navli{
+    height: 22px;
+    padding: 17px;
+}
+
+.navli:hover{
+    cursor: pointer;
+    color: darkblue;
+    background-color: cornflowerblue;
+    
+}
+
+.second-nav {
+    width: 50%;
+    text-align: right;
+    margin-top: 10px;
+}
+.second-nav input{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 2px groove black;
+    background: lightblue;
+    border: 3px solid whitesmoke;
+}
+.second-nav button{
+    /* border: 3px solid black; */
+    border-radius: 10px;
+    height: 36px;
+    width: 78px;
+    color: white;
+    background: none;
+}
+.second-nav button:hover{
+     background-color: lightgreen;
+     cursor: pointer;
+     color:white;
+     background-color: burlywood;
+
+}
+.container{
+    margin-top: 32vh;
+}
+.container h1{
+    color: white;
+    text-align: center;
+}
+
+.container p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 10px;
+}
+.btn button{
+    height: 31px;
+    width: 60px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: width 0.5s ,height 0.5s ,font-size 0.5s;
+}
+
+
+.btn button:hover{
+    width: 76px;
+    height: 42px;
+    font-size: large;
+    color: dimgray;
+}
+
+@media only screen and (max-width: 706px) {
+
+ .nav-bar{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 30px;
+     transition: all 0.2s ease-out;
+ } 
+
+ .nav1{
+     height: 330px;
+ }
+ .nav-ul{
+     display: none;
+     /* flex-direction: column;
+     justify-content: center;
+     align-items: center; */
+ }
+ .burger{
+    display: flex;
+    /* background-color: black; */
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+     
+ }
+ .line{
+    margin: 3px; 
+    background-color: white;
+    height: 1px;
+    width: 20px;
+
+ }
+ .second-nav{
+     display: none;
+     /* display: block; */
+     /* margin: auto; */
+ }
+ 
+.disp{
+    display: flex;
+    /* height: 224px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.btnin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
